@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BookDetail"
+    android:orientation="vertical"
+    android:padding="5dp">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="350dp"
+        android:src="@drawable/loading"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:id="@+id/book_img"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="책 제목"
+        android:layout_marginTop="20dp"
+        android:textSize="35sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:id="@+id/book_title"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:text="저자"
+        android:layout_marginTop="10dp"
+        android:textSize="25sp"
+        android:id="@+id/book_author"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:text="출판사"
+        android:textSize="20sp"
+        android:id="@+id/book_publisher"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="출간일"
+        android:gravity="right"
+        android:textSize="20sp"
+        android:id="@+id/book_pubdate"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:text="네이버 도서의 책소개"
+            android:textSize="25sp"/>
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+            android:layout_marginTop="5dp"
+        android:background="#999999"/>
+
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="네이버 도서의 책 소개"
+            android:layout_marginTop="5dp"
+        android:textSize="20dp"
+        android:id="@+id/book_description"/>
+
+
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>
+</layout>
