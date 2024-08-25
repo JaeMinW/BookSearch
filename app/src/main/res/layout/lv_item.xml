@@ -10,6 +10,7 @@
         android:layout_width="150dp"
         android:layout_height="200dp"
         android:src="@drawable/loading"
+        android:padding="10dp"
         android:scaleType="fitXY"
         android:id="@+id/book_img"/>
 
@@ -24,7 +25,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="제목"
-            android:textColor="#00f"
+            android:textColor="@color/black"
+            android:textStyle="bold"
             android:textSize="20dp" />
 
         <TextView
